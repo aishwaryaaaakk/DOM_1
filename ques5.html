@@ -17,13 +17,13 @@
 </body>
 </html>
 <script>
-    let inp1 = document.getElementById("name");
-    let inp2 = document.getElementById("gender");
-    let disp = document.getElementById("display");
+    
     function application(){
-        let ans =inp1.value;
-        let gend = inp2.value;
-        disp.innerText = ans + gender;
+
+        let inp1 = document.getElementById("name").value;
+        let inp2 = document.getElementById("gender").value;
+        let disp=document.getElementById("display");
+        disp.innerText = inp1+" "+inp2;
     }
     
 

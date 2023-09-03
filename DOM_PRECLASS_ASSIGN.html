@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
+        body {
+            font-family: 'Poppins';font-size: 22px;
+        }
+        input{
+            padding: 5px;
+            font-size: large;
+        }
+        button{
+            font-size: 14px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="Enter your name">
+    <br>
+    <br>
+    <button id="myButton">SUBMIT</button>
+    <h2 id="display"></h2>
+    
+</body>
+<script>
+    let int=document.getElementById("myInput");
+    let disp=document.getElementById("display");
+    let btn=document.querySelector("#myButton");
+    btn.addEventListener('click',function(){
+        alert("Entered Value");
+        disp.innerText="Entered value:"+int.value;
+    })
+        
+    
+</script>
+</html>
